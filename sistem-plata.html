@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9a54a490ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BTZ Fashion-Collection</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Acasă</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Despre Noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produse.html">Produse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="payment-title">
+        <h2>Checkout Payment</h2>
+    </div>
+
+    <div class="payment">
+        <div class="checkout-form">
+            <div class="container-payment">
+                <form action="/action_page.php">
+                    <div class="payment">
+                        <div class="payment-detalii">
+                            <h3>Adresa de facturare</h3>
+                            <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                            <input type="text" name="firstname" id="fname" placeholder="Name">
+                            <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+                            <input type="text" name="adr" id="adr" placeholder="Address">
+                            <label for="city"><i class="fa fa-institution"></i>Institution</label>
+                            <input type="text" name="city" id="city" placeholder="City">
+
+                            <div class="payment">
+                                <div class="payment-detalii">
+                                    <label for="state">State</label>
+                                    <input type="text" name="state" id="state" placeholder="Bucuresti">
+                                </div>
+                                <div class="payment-detalii">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" name="zip" id="zip" placeholder="101110">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-detalii">
+                            <h3>Plata Detalii</h3>
+                            <label for="fname">Carduri Acceptate</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color: blueviolet;"></i>
+                                <i class="fa fa-cc-amex" style="color: brown;"></i>
+                                <i class="fa fa-cc-mastercard" style="color: orangered;"></i>
+                                <i class="fa fa-cc-discover" style="color: green;"></i>
+                            </div>
+                            <label for="cname">Numele Cardului</label>
+                            <input type="text" name="cname" id="cname" placeholder="Card Name">
+                            <label for="ccnum">Numarul Cardului</label>
+                            <input type="text" name="ccnum" id="ccnum" placeholder="Credit Card Number">
+                            <label for="expmonth">Data Expirarii</label>
+                            <input type="text" name="expmonth" id="expmonth" placeholder="Exp Month">
+                            <div class="payment">
+                                <div class="payment-detalii">
+                                    <label for="year">Anul</label>
+                                    <select name="" id="">
+                                        <option value="">2010</option>
+                                        <option value="">2011</option>
+                                        <option value="">2012</option>
+                                        <option value="">2013</option>
+                                        <option value="">2014</option>
+                                    </select>
+                                </div>
+                                <div class="payment-detalii">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" name="cvv" id="cvv" placeholder="CVV">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="Gabriel"> 
+                        Adresa de livrare la fel ca și adresa de facturare
+                    </label>
+                    <input type="submit" value="Finalizeaza Plata" class="btn" onclick="finalizeazaPlata()">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function finalizeazaPlata(){
+            alert("Mulțumim pentru plata");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
